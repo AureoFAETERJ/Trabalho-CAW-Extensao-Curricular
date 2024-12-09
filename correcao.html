@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://html5-templates.com/" />
+    <title>Calculadora Financeira</title>
+    <meta name="description" content="Simple HTML5 Page layout template with header, footer, sidebar etc.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+	<header>
+		<div id="logo">Calculadora Financeira</div>
+		<nav>  
+		<ul>
+			<li><a href="index.html">Home</a>
+			<li><div class="dropdown">
+				<a class="dropbtn">Juros & Empréstimos</a>
+				<div class="dropdown-content">
+					<a href="juros.html">Juros simples e compostos</a>
+					<a href="taxa.html">Valores após taxa</a>
+				</div>
+			</div> 
+			<li><div class="dropdown">
+				<a class="dropbtn">Investimentos</a>
+				<div class="dropdown-content">
+					<a href="correcao.html">Correção de valores</a>
+				</div>
+			</div> 
+		</ul>
+		</nav>
+	</header>
+	<section id="pageContent">
+		<main role="main">
+			<form id="calculadora-form">
+				<label for="valor">Valor a ser corrigido</label><br>
+				<input type="number" id="valor" name="valor"><br>
+				<label for="aIni">Ano inicial</label><br>
+				<input type="number" min="1994" id="aIni" name="aIni"><br>
+				<label for="aFin">Ano final</label><br>
+				<input type="number" min="1994" id="aFin" name="aFin"><br>
+				<input type="submit" value="Corrigir valor">
+				
+				<div id="resultado" class="resultado-box"></div>
+			</form> 
+		</main>
+	</section>
+	<footer>
+		<p>&copy; You can copy, edit and publish this template but please leave a link to our website | <a href="https://html5-templates.com/" target="_blank" rel="nofollow">HTML5 Templates</a></p>
+		<address>
+			Contact: <a href="mailto:me@example.com">Mail me</a>
+		</address>
+	</footer>
+	<script src="correcao.js"></script>
+
+</body>
+
+</html>

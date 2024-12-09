@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://html5-templates.com/" />
+    <title>Calculadora Financeira</title>
+    <meta name="description" content="Simple HTML5 Page layout template with header, footer, sidebar etc.">
+    <link rel="stylesheet" href="style.css">
+    <script src="taxa.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div id="logo">Calculadora Financeira</div>
+        <nav>  
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><div class="dropdown">
+                    <a class="dropbtn">Juros & Empréstimos</a>
+                    <div class="dropdown-content">
+                        <a href="juros.html">Juros simples e compostos</a>
+                        <a href="taxa.html">Valores após taxa</a>
+                    </div>
+                </div></li>
+                <li><div class="dropdown">
+                    <a class="dropbtn">Investimentos</a>
+                    <div class="dropdown-content">
+                        <a href="correcao.html">Correção de valores</a>
+                    </div>
+                </div></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="pageContent">
+        <main role="main">
+            <form id="calculadora-form">
+                <label for="valor">Valor bruto</label><br>
+                <input type="number" id="valor" name="valor" required><br>
+                <label for="tPorCento">Taxa (%)</label><br>
+                <input type="number" id="tPorCento" min="0" max="100" name="tPorCento" required/><br>
+                <input type="submit" value="Calcular valor líquido">
+                
+                <!-- Resultado será mostrado aqui -->
+                <div id="resultado" class="resultado-box"></div>
+            </form> 
+        </main>
+    </section>
+
+    <footer>
+        <p>&copy; You can copy, edit and publish this template but please leave a link to our website | <a href="https://html5-templates.com/" target="_blank" rel="nofollow">HTML5 Templates</a></p>
+        <address>
+            Contact: <a href="mailto:me@example.com">Mail me</a>
+        </address>
+    </footer>
+</body>
+</html>
+

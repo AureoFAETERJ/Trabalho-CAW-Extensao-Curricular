@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://html5-templates.com/" />
+    <title>Calculadora Financeira</title>
+    <meta name="description" content="Simple HTML5 Page layout template with header, footer, sidebar etc.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+		<div id="logo">Calculadora Financeira</div>
+		<nav>  
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><div class="dropdown">
+				<a class="dropbtn">Juros & Empréstimos</a>
+				<div class="dropdown-content">
+					<a href="juros.html">Juros simples e compostos</a>
+					<a href="taxa.html">Valores após taxa</a>
+				</div>
+			</div> 
+			</li>
+			<li><div class="dropdown">
+				<a class="dropbtn">Investimentos</a>
+				<div class="dropdown-content">
+					<a href="correcao.html">Correção de valores</a>
+				</div>
+			</div> 
+			</li>
+		</ul>
+		</nav>
+	</header>
+
+	<section id="pageContent">
+		<main role="main">
+			<form>
+				<label for="vIni">Valor inicial</label><br>
+				<input type="number" id="vIni" name="vIni" required><br>
+
+				<label for="nPres">Número de prestações</label><br>
+				<input type="number" id="nPres" name="nPres" required><br>
+
+				<label for="modJuros">Modalidade de juros</label><br>
+				<select id="modJuros" name="modJuros" required>
+					<option value="simples">Simples</option>
+					<option value="composto">Composto</option>
+				</select><br>
+
+				<label for="pCapital">Período de capitalização</label><br>
+				<select id="pCapital" name="pCapital" required>
+					<option value="aa">Ao ano</option>
+					<option value="am">Ao mês</option>
+				</select><br>
+
+				<label for="taxaJuros">Taxa de Juros (%)</label><br>
+				<input type="number" id="taxaJuros" name="taxaJuros" required><br>
+
+				<input type="submit" value="Calcular">
+			</form>
+
+			<!-- Adicionando um lugar para mostrar o resultado -->
+			<div id="resultado" style="margin-top: 20px; font-size: 18px;"></div>
+		</main>
+	</section>
+
+	<footer>
+		<p>&copy; You can copy, edit and publish this template but please leave a link to our website | <a href="https://html5-templates.com/" target="_blank" rel="nofollow">HTML5 Templates</a></p>
+		<address>
+			Contact: <a href="mailto:me@example.com">Mail me</a>
+		</address>
+	</footer>
+
+	<!-- Link para o arquivo script.js -->
+	<script src="script.js"></script>
+</body>
+</html>
+
